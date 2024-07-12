@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item {
+    margin: 0 1rem;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+    color: #ff6347;
+}
+
+.welcome-container {
+    background-color: #e6e6e6;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    height: 67px;
+    width: calc(100% - 40px);
+    border-radius: 3px;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.text1-container {
+    background-color: #e6e6e6;
+    position: relative;
+    top: 16px;
+    left: 20px;
+    right: 20px;
+    height: 67px;
+    width: calc(100% - 40px);
+    border-radius: 3px;
+}
+
+hr {
+    position:relative;
+    top: 20px;
+}
+
+.game-container {
+    background-color: #e6e6e6;
+    position: relative;
+    top: 25px;
+    left: 20px;
+    right: 20px;
+    height: 790px;
+    width: calc(100% - 40px);
+    border-radius: 3px;
+}
+
+.game-logo {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    height: 400px;
+    width: 400px;
+    transform: translateX(-50%);
+}
+
+.game-title {
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+}
+
+.game-description {
+    position: absolute;
+    top: 460px;
+    text-align: center;
+}
