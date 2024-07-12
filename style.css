@@ -1,104 +1,122 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Stili di base rimossi per brevità */
+
+/* Media query per schermi di larghezza superiore a 768px */
+@media (min-width: 768px) {
+    .navbar {
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-item {
+        margin: 0 1rem;
+    }
+
+    .navbar-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    .navbar-item a:hover {
+        color: #ff6347;
+    }
+
+    .welcome-container,
+    .text1-container,
+    .game-container {
+        background-color: #e6e6e6;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 3px;
+        width: calc(100% - 40px);
+    }
+
+    .game-logo {
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        height: 400px;
+        width: 400px;
+        transform: translateX(-50%);
+    }
+
+    .game-title {
+        position: absolute;
+        top: 410px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+    }
+
+    .game-description {
+        position: absolute;
+        top: 460px;
+        text-align: center;
+    }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+/* Media query per schermi di larghezza inferiore a 768px */
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #333;
+        padding: 1rem;
+    }
 
-.navbar {
-    background-color: #333;
-    padding: 1rem;
-}
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.navbar-menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
+    .navbar-item {
+        margin: 0.5rem 0;
+    }
 
-.navbar-item {
-    margin: 0 1rem;
-}
+    .navbar-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
 
-.navbar-item a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
+    .navbar-item a:hover {
+        color: #ff6347;
+    }
 
-.navbar-item a:hover {
-    color: #ff6347;
-}
+    .welcome-container,
+    .text1-container,
+    .game-container {
+        background-color: #e6e6e6;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: calc(100% - 20px);
+    }
 
-.welcome-container {
-    background-color: #e6e6e6;
-    position: relative;
-    top: 10px;
-    left: 20px;
-    right: 20px;
-    height: 67px;
-    width: calc(100% - 40px);
-    border-radius: 3px;
-}
+    .game-logo {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto; /* Per centrare l'immagine */
+    }
 
-.welcome {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-}
+    .game-title {
+        font-size: 24px;
+        text-align: center;
+    }
 
-.text1-container {
-    background-color: #e6e6e6;
-    position: relative;
-    top: 16px;
-    left: 20px;
-    right: 20px;
-    height: 67px;
-    width: calc(100% - 40px);
-    border-radius: 3px;
-}
-
-hr {
-    position:relative;
-    top: 20px;
-}
-
-.game-container {
-    background-color: #e6e6e6;
-    position: relative;
-    top: 25px;
-    left: 20px;
-    right: 20px;
-    height: 790px;
-    width: calc(100% - 40px);
-    border-radius: 3px;
-}
-
-.game-logo {
-    position: absolute;
-    left: 50%;
-    top: 5px;
-    height: 400px;
-    width: 400px;
-    transform: translateX(-50%);
-}
-
-.game-title {
-    position: absolute;
-    top: 410px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 30px;
-}
-
-.game-description {
-    position: absolute;
-    top: 460px;
-    text-align: center;
+    .game-description {
+        text-align: justify;
+        padding: 0 10px;
+    }
 }
