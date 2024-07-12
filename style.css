@@ -1,4 +1,4 @@
-/* Stili di base rimossi per brevità */
+/* Stili di base e stili per schermi larghi rimossi per brevità */
 
 /* Media query per schermi di larghezza superiore a 768px */
 @media (min-width: 768px) {
@@ -29,8 +29,7 @@
     }
 
     .welcome-container,
-    .text1-container,
-    .game-container {
+    .text1-container {
         background-color: #e6e6e6;
         position: relative;
         top: 10px;
@@ -38,29 +37,33 @@
         right: 20px;
         border-radius: 3px;
         width: calc(100% - 40px);
+        margin-bottom: 20px; /* Aggiunto margine inferiore per separare dal gioco */
+    }
+
+    .game-container {
+        background-color: #e6e6e6;
+        padding: 20px;
+        border-radius: 3px;
+        margin: 20px auto; /* Aggiunto margine auto a sinistra e destra */
+        max-width: calc(100% - 40px); /* Larghezza massima del contenitore con margine */
     }
 
     .game-logo {
-        position: absolute;
-        left: 50%;
-        top: 5px;
-        height: 400px;
-        width: 400px;
-        transform: translateX(-50%);
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
+        height: auto; /* Per mantenere l'aspetto proporzionato */
     }
 
     .game-title {
-        position: absolute;
-        top: 410px;
-        left: 50%;
-        transform: translateX(-50%);
         font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
     }
 
     .game-description {
-        position: absolute;
-        top: 460px;
-        text-align: center;
+        text-align: justify;
+        margin-top: 10px;
     }
 }
 
@@ -101,6 +104,7 @@
         right: 10px;
         border-radius: 3px;
         width: calc(100% - 20px);
+        margin-bottom: 20px; /* Aggiunto margine inferiore per separare dal gioco */
     }
 
     .game-logo {
